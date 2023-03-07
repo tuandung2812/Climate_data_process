@@ -1,0 +1,14 @@
+# Climate_data_process
+- Create a "data/nc_files" directory, then include the **.NC** files in the created directory. Rename those files to the names of their features
+  - evaporation.nc
+  - total_precipitation.nc
+  - surface_pressure.nc
+  - u10.nc
+  - v10.nc
+- Execute **bash run.sh** to run the code. \
+  - Choose which features to include: adjust the features variable in the 2nd line
+  - nc_files_dir: Directory where the **.NC** files of the features are put
+  - csv_save_files_dir: Directory to save the CSV files converted from the .NC files, as well as the merged files of all the features
+  - stations_data_dir: Directory to save the csv files of individual stations, with a **location.csv** file to store their coordinates
+  - read_nc.py: Code to read and convert **>NC** files to csv, and merge those csv files
+  - process_data.py: Code to process the merged data into individual stations
